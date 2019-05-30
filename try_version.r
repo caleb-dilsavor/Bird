@@ -55,7 +55,7 @@ print("# Now, how many recordings per locality")
 #xcmaps(usata.song, img = TRUE)
 
 print("# Loop starts and downnload file by file")
-for(song in 8:length(usata.song)){
+for(song in 1:length(usata.song)){
 querxc(X =usata.song[song,]) 
 
 # Save each data frame object as a .csv file 
