@@ -104,7 +104,7 @@ sub <- wavs[sample(1:length(wavs), 3)]
 autodetec(flist = sub, bp = c(2, 9), threshold = 20, mindur = 0.09, maxdur = 0.22, 
                      envt = "abs", ssmooth = 900, ls = TRUE, res = 100, 
                      flim= c(1, 12), wl = 300, set =TRUE, sxrow = 6, rows = 15, 
-                     redo = TRUE, it = "tiff", img = TRUE)I
+                     redo = TRUE, it = "tiff", img = TRUE)
 
 Phae.ad <- autodetec(bp = c(2, 9), threshold = 20, mindur = 0.09, maxdur = 0.22, 
                      envt = "abs", ssmooth = 900, ls = TRUE, res = 100, 
