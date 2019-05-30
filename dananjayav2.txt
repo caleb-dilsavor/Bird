@@ -38,12 +38,12 @@ table(usata.song$Locality)
 # And only those of the highest quality
 #Phae.lon.LS <- Phae.lon.LS[Phae.lon.LS$Quality == "A", ]
 
-print("generating map # map in the graphic device (img = FALSE)")
-xcmaps(usata.song, img = TRUE)
+#print("generating map # map in the graphic device (img = FALSE)")
+#xcmaps(usata.song, img = TRUE)
 
 print("# Loop starts and downnload file by file")
-for(song in usata.song){
-querxc(X =song) 
+for(song in 3:length(usata.song)){
+querxc(X =usata.song[song,]) 
 
 # Save each data frame object as a .csv file 
 write.csv(usata.song, "USA_Texas_A.csv", row.names = FALSE)
@@ -52,7 +52,7 @@ write.csv(usata.song, "USA_Texas_A.csv", row.names = FALSE)
 
 # Neither of these functions requires arguments
 # Always check you're in the right directory beforehand
-getwd()
+print(getwd())
 mp32wav() 
 
 # You can use checkwavs to see if wav files can be read
