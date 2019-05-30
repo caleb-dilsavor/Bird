@@ -3,6 +3,19 @@ library('warbleR')
 dir.create(file.path(getwd(),"dananjaya"))
 setwd(file.path(getwd(),"dananjaya"))
 
+pause = function()
+{
+    if (interactive())
+    {
+        invisible(readline(prompt = "Press <Enter> to continue..."))
+    }
+    else
+    {
+        cat("Press <Enter> to continue...")
+        invisible(readLines(file("stdin"), 1))
+    }
+}
+
 # Query Xeno-Canto for all recordings birds in USA
 #USA <- querxc('cnt:"United States"', download = FALSE) 
 #names(USA)
@@ -10,14 +23,14 @@ setwd(file.path(getwd(),"dananjaya"))
 print("# Query Xeno-Canto for all recordings of the species Phaethornis longirostris")
 USA.Texas.A <- querxc('cnt:"United States" loc: "Texas" q: A', download = FALSE) 
 print("#view command output")
-View(USA.Texas.A)
+#View(USA.Texas.A)
 print("# Find out number of available recordings")
 nrow(USA.Texas.A) 
 print("# Find out how many types of signal descriptions exist in the Xeno-Canto metadata")
 levels(USA.Texas.A$Vocalization_type)
 
 print("How many recordings per signal type?")
-table(USA.Texas.A$Vocalization_type)
+#table(USA.Texas.A$Vocalization_type)
 
 # There are many levels to the Vocalization_type variable. 
 # Some are biologically relevant signals, but most just 
@@ -30,7 +43,7 @@ print("# Check resulting data frame")
 str(usata.song) 
 
 print("# Now, how many recordings per locality")
-table(usata.song$Locality)
+#table(usata.song$Locality)
 
 #first filter by location
 #Phae.lon.LS <- Phae.lon.song[grep("La Selva Biological Station, Sarapiqui, Heredia", Phae.lon.song$Locality,ignore.case = FALSE),]
@@ -56,7 +69,9 @@ print(getwd())
 mp32wav() 
 
 # You can use checkwavs to see if wav files can be read
-checkwavs() 
+
+try({
+checkwavs()
 
 print("# Let's create a list of all the recordings in the directory")
 wavs <- list.files(pattern="wav$")
@@ -70,29 +85,29 @@ sub <- wavs
 
 # ovlp = 10 speeds up process a bit 
 # tiff image files are better quality and are faster to produce
-lspec(flist = sub, ovlp = 10, it = "tiff")
+#lspec(flist = sub, ovlp = 10, it = "tiff")
 
 # We can zoom in on the frequency axis by changing flim, 
 # the number of seconds per row, and number of rows
-lspec(flist = sub, flim = c(1.5, 11), sxrow = 6, rows = 15, ovlp = 10, it = "tiff")
+#lspec(flist = sub, flim = c(1.5, 11), sxrow = 6, rows = 15, ovlp = 10, it = "tiff")
 
-lspec(flim = c(1.5, 11), ovlp = 10, sxrow = 6, rows = 15, it = "tiff")
+#lspec(flim = c(1.5, 11), ovlp = 10, sxrow = 6, rows = 15, it = "tiff")
 
-print("# List the image files in the directory")
+#print("# List the image files in the directory")
 # Change the pattern to "jpeg" if you used that image type
-imgs <- list.files(pattern = ".tiff") 
+#imgs <- list.files(pattern = ".tiff") 
 
 # If the maps we created previously are still there, you can remove them from this list easily
-imgs <- imgs[grep("Map", imgs, invert = TRUE)]
+#imgs <- imgs[grep("Map", imgs, invert = TRUE)]
 
 # Extract the recording IDs of the files for which image files remain 
-kept <- unique(sapply(imgs, function(x){
-  strsplit(x, split = "-", fixed = TRUE)[[1]][3]
-  }, USE.NAMES = FALSE))
+#kept <- unique(sapply(imgs, function(x){
+#  strsplit(x, split = "-", fixed = TRUE)[[1]][3]
+ # }, USE.NAMES = FALSE))
 
 # Now we can get rid of sound files that do not have image files 
-snds <- list.files(pattern = ".wav", ignore.case = TRUE) 
-file.remove(snds[grep(paste(kept, collapse = "|"), snds, invert = TRUE)])
+#snds <- list.files(pattern = ".wav", ignore.case = TRUE) 
+#file.remove(snds[grep(paste(kept, collapse = "|"), snds, invert = TRUE)])
 
 # Select a subset of the recordings
 #wavs <- list.files(pattern = ".wav", ignore.case = TRUE)
@@ -103,19 +118,19 @@ set.seed(1)
 
 # Run autodetec() on subset of recordings
 
-autodetec(flist = sub, bp = c(2, 9), threshold = 20, mindur = 0.09, maxdur = 0.22, 
-                     envt = "abs", ssmooth = 900, ls = TRUE, res = 100, 
-                     flim= c(1, 12), wl = 300, set =TRUE, sxrow = 6, rows = 15, 
-                     redo = TRUE, it = "tiff", img = TRUE)
+#autodetec(flist = sub, bp = c(2, 9), threshold = 20, mindur = 0.09, maxdur = 0.22, 
+#                     envt = "abs", ssmooth = 900, ls = TRUE, res = 100, 
+#                     flim= c(1, 12), wl = 300, set =TRUE, sxrow = 6, rows = 15, 
+#                     redo = TRUE, it = "tiff", img = TRUE)
 
 usa.ad <- autodetec(bp = c(2, 9), threshold = 20, mindur = 0.09, maxdur = 0.22, 
                      envt = "abs", ssmooth = 900, ls = TRUE, res = 100, 
                      flim= c(1, 12), wl = 300, set =TRUE, sxrow = 6, rows = 15, 
-                     redo = TRUE, it = "tiff", img = TRUE)
+                     redo = TRUE, it = "jpeg", img = TRUE)
 print("show output of autodetec")
 str(usa.ad)
 
-table(usa.ad$sound.files)
+#table(usa.ad$sound.files)
 
 # A margin that's too large causes other signals to be included in the noise measurement
 # Re-initialize X as needed, for either autodetec or manualoc output
@@ -135,13 +150,13 @@ set.seed(5)
 
 usa.snr <- sig2noise(X = usa.ad[seq(1, nrow(usa.ad)), ], mar = 0.04)
 print(ave(-usa.snr$SNR, usa.snr$sound.files, FUN = rank))
-cat ("Press [enter] to continue")
-line <- readline()
+table(usa.snr)
+pause()
 
 usa.hisnr <- usa.snr[ave(-usa.snr$SNR, usa.snr$sound.files, FUN = rank) <= 5, ]
 
 print("# Double check the number of selection per sound files") 
-table(usa.hisnr$sound.files)
+#table(usa.hisnr$sound.files)
 
 write.csv(usa.hisnr, "USA_Texas_A_autodetec_selecs.csv", row.names = FALSE)
 
@@ -166,10 +181,10 @@ View(params)
 str(params)
 
 write.csv(params, "feature_vector.csv", row.names = FALSE,append= TRUE)
-cat ("Press [enter] to continue")
-line <- readline()
+pause()
 unlink("*.mp3")
 unlink("*.wav")
+})
 }
 # As always, it's a good idea to write .csv files to your working directory
 
