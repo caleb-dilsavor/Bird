@@ -59,7 +59,7 @@ print("number of files after filtering USA,quality A,Only songs")
 #print(length(usata.song))
 print(nrow(usata.song))
 print("# Loop starts and downnload file by file")
-for(song in 26:nrow(usata.song)){
+for(song in 1:nrow(usata.song)){
 
 unlink("*.mp3")
 unlink("*.wav")
