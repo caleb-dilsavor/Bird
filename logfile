@@ -1,0 +1,1211 @@
+[1] "# Query Xeno-Canto for all recordings of the species Phaethornis longirostris"
+   |                                                  | 0 % ~calculating     |++                                                | 3 % ~02m 57s         |++++                                              | 6 % ~02m 54s         |+++++                                             | 9 % ~02m 52s         |+++++++                                           | 12% ~02m 46s         |++++++++                                          | 16% ~02m 41s         |++++++++++                                        | 19% ~02m 37s         |+++++++++++                                       | 22% ~02m 30s         |+++++++++++++                                     | 25% ~02m 22s         |+++++++++++++++                                   | 28% ~02m 16s         |++++++++++++++++                                  | 31% ~02m 11s         |++++++++++++++++++                                | 34% ~02m 05s         |+++++++++++++++++++                               | 38% ~01m 58s         |+++++++++++++++++++++                             | 41% ~01m 52s         |++++++++++++++++++++++                            | 44% ~01m 47s         |++++++++++++++++++++++++                          | 47% ~01m 41s         |+++++++++++++++++++++++++                         | 50% ~01m 36s         |+++++++++++++++++++++++++++                       | 53% ~01m 30s         |+++++++++++++++++++++++++++++                     | 56% ~01m 24s         |++++++++++++++++++++++++++++++                    | 59% ~01m 18s         |++++++++++++++++++++++++++++++++                  | 62% ~01m 12s         |+++++++++++++++++++++++++++++++++                 | 66% ~01m 06s         |+++++++++++++++++++++++++++++++++++               | 69% ~01m 01s         |++++++++++++++++++++++++++++++++++++              | 72% ~55s             |++++++++++++++++++++++++++++++++++++++            | 75% ~49s             |++++++++++++++++++++++++++++++++++++++++          | 78% ~43s             |+++++++++++++++++++++++++++++++++++++++++         | 81% ~37s             |+++++++++++++++++++++++++++++++++++++++++++       | 84% ~30s             |++++++++++++++++++++++++++++++++++++++++++++      | 88% ~24s             |++++++++++++++++++++++++++++++++++++++++++++++    | 91% ~18s             |+++++++++++++++++++++++++++++++++++++++++++++++   | 94% ~12s             |+++++++++++++++++++++++++++++++++++++++++++++++++ | 97% ~06s             |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed = 03m 14s
+15846 recordings found!
+[1] "#view command output"
+[1] "# Find out number of available recordings"
+[1] 15846
+[1] "# Find out how many types of signal descriptions exist in the Xeno-Canto metadata"
+  [1] "call"                                                                            
+  [2] "flight call"                                                                     
+  [3] "call, flight call"                                                               
+  [4] "alarm call"                                                                      
+  [5] "trumpeting calls whilst feeding"                                                 
+  [6] "song"                                                                            
+  [7] "Hissing, peeping"                                                                
+  [8] "flight call, wing flaps"                                                         
+  [9] "call, flight call, wing whir"                                                    
+ [10] "call, murmuration"                                                               
+ [11] "Call"                                                                            
+ [12] "'Rug Rat' annoyance duet"                                                        
+ [13] "honking"                                                                         
+ [14] "wing noise"                                                                      
+ [15] "hissing call"                                                                    
+ [16] "call, take off sounds"                                                           
+ [17] "wing noise and call"                                                             
+ [18] "call, juvenile"                                                                  
+ [19] "\"Sea-shell\" like drone of suburban surroundings., alarm call"                  
+ [20] "alarm call, female"                                                              
+ [21] "Wing beat, call, flight call"                                                    
+ [22] "call, female"                                                                    
+ [23] "call, female, flight call"                                                       
+ [24] "interaction calls"                                                               
+ [25] "call, female, flight call, male"                                                 
+ [26] "female, flight call"                                                             
+ [27] "female, flight call, male"                                                       
+ [28] "flying in and landing on water, male, song"                                      
+ [29] "call, male"                                                                      
+ [30] "call, male, wing noise"                                                          
+ [31] "call, male, wing noise taking flight"                                            
+ [32] "female and male calls"                                                           
+ [33] "male and female calls"                                                           
+ [34] "call, female, male"                                                              
+ [35] "call, decrescendo, female"                                                       
+ [36] "male burp"                                                                       
+ [37] "alarm call, call"                                                                
+ [38] "Wing Noise, alarm call"                                                          
+ [39] "Whistle, male"                                                                   
+ [40] "male peep"                                                                       
+ [41] "Male and female calls"                                                           
+ [42] "display"                                                                         
+ [43] "takeoff noise"                                                                   
+ [44] "call, wing noise"                                                                
+ [45] "call, song"                                                                      
+ [46] "Wing Noise"                                                                      
+ [47] "wing noise and display"                                                          
+ [48] "Display Call"                                                                    
+ [49] "wing noise and calls"                                                            
+ [50] "alarm call, female, flight call"                                                 
+ [51] "growl, male, typical of courtship.  Accompanies 'bucking' behavior"              
+ [52] "call, male, vocalization uttered by males only challenging one another prior to" 
+ [53] "display call"                                                                    
+ [54] "calling whilst foraging, song"                                                   
+ [55] "call, contact call and trilled mewing"                                           
+ [56] "call, male, song"                                                                
+ [57] "chip call"                                                                       
+ [58] "screech call & song"                                                             
+ [59] "advertisement and aggressive calls, alarm call, call, male"                      
+ [60] "Wing flapping, call"                                                             
+ [61] "aggitated call, call"                                                            
+ [62] "call, clucking, male, song"                                                      
+ [63] "call, song, two calling back and forth"                                          
+ [64] "alarm call, call, female, male"                                                  
+ [65] "male, song"                                                                      
+ [66] "pair interaction calls"                                                          
+ [67] "agitated calls"                                                                  
+ [68] "advertising call"                                                                
+ [69] "alarm call, call, male"                                                          
+ [70] "song, wing flaps"                                                                
+ [71] "flight call, male"                                                               
+ [72] "call, female, interaction calls of female and male, male, mechanical like wing s"
+ [73] "call, female, male, male hoot, song"                                             
+ [74] "call on flushing"                                                                
+ [75] "contact call"                                                                    
+ [76] "female-male duet and/or interactions between and within pairs; contact calls"    
+ [77] "female-male duet and/or interactions between and within pairs"                   
+ [78] "female-male duet and/or interactions between pairs"                              
+ [79] "alarm call, call, female, juvenile"                                              
+ [80] "alarm call, call, song"                                                          
+ [81] "juvenile"                                                                        
+ [82] "Males Diplaying"                                                                 
+ [83] "Wing drum, male"                                                                 
+ [84] "Wing noise of birds flushing from ground., call, female"                         
+ [85] "Tail whoosh"                                                                     
+ [86] "Drumming Display"                                                                
+ [87] "tail whoosh"                                                                     
+ [88] "wing clap"                                                                       
+ [89] "drumming"                                                                        
+ [90] "Leking display, male, song"                                                      
+ [91] "lekking males, male, song"                                                       
+ [92] "tail rattle"                                                                     
+ [93] "lekking"                                                                         
+ [94] "lek display, flight calls"                                                       
+ [95] "toot"                                                                            
+ [96] "Toot"                                                                            
+ [97] "Booming, Toot"                                                                   
+ [98] "call, female, juvenile"                                                          
+ [99] "calls made whilst displaying, male, song"                                        
+[100] "calls and mechanical wing noise made during display, male, song"                 
+[101] "cluck, female"                                                                   
+[102] "booming hoots"                                                                   
+[103] "Males at a lek, drumming, male, song"                                            
+[104] "call, drumming, male"                                                            
+[105] "male lekking sounds"                                                             
+[106] "lek sounds"                                                                      
+[107] "display, male"                                                                   
+[108] "call, lek, male"                                                                 
+[109] "lek, male, song"                                                                 
+[110] "drumming, male, song"                                                            
+[111] "call, drumming, male, song"                                                      
+[112] "booming, cackle, song, whine"                                                    
+[113] "lek calls"                                                                       
+[114] "booming"                                                                         
+[115] "call, ground challenge"                                                          
+[116] "call, display, song"                                                             
+[117] "flight scream etc"                                                               
+[118] "call, wingbeats"                                                                 
+[119] "song, wing noise"                                                                
+[120] "yodel"                                                                           
+[121] "tremelo call"                                                                    
+[122] "wail call"                                                                       
+[123] "alarm call, bill clacks at nest"                                                 
+[124] "call, clappering bills, female, male"                                            
+[125] "call, clappering bills, female, male, song"                                      
+[126] "Call, female, male, song"                                                        
+[127] "Bill clappering, call, female, male, song"                                       
+[128] "bill clappering, call, female, male, song"                                       
+[129] "Call, clappering bills, female, male, song"                                      
+[130] "Song ... call ... male ... female ..."                                           
+[131] "call, female, male, song"                                                        
+[132] "song, call, male, female, bill clappering"                                       
+[133] "call, clappering bills ..., female, male, song"                                  
+[134] "call, clappering bill ..., female, male, song"                                   
+[135] "begging call, bill clappering, call, female, male, song"                         
+[136] "begging call, call, female, male, song"                                          
+[137] "Call, call, female, flight call, male, song"                                     
+[138] "call, female, flight call, male, song"                                           
+[139] "song ... call ... flight call ... male ... female ..."                           
+[140] "begging call, call, juvenile"                                                    
+[141] "Alarm call"                                                                      
+[142] "begging call"                                                                    
+[143] "begging call, call"                                                              
+[144] "begging call, juvenile"                                                          
+[145] "call, courtship water dance, female, male"                                       
+[146] "billed snapping"                                                                 
+[147] "nestling calls"                                                                  
+[148] "bill snaps, call"                                                                
+[149] "bill snaps, call, wing noise"                                                    
+[150] "flight call, nocturnal flight call"                                              
+[151] "alarm call, flight call"                                                         
+[152] "flight song"                                                                     
+[153] "alarm call, mixture of threat and other calls at rookery"                        
+[154] "Nesting birds in a rookery with large chicks, all manner of behavior: begging, s"
+[155] "flight call, wing noise"                                                         
+[156] "call, splashing"                                                                 
+[157] "begging call, call, flight call, juvenile, male"                                 
+[158] "call, splash"                                                                    
+[159] "begging call, call, children in a swimming pool"                                 
+[160] "call "                                                                           
+[161] "Repeated calls seemed to be given as mate or another bird approached the nest"   
+[162] " call"                                                                           
+[163] "male food transfer call"                                                         
+[164] "calls, juvenile"                                                                 
+[165] "\"Squeal\" call, female"                                                         
+[166] "alarm call, male"                                                                
+[167] "call, copulatory call"                                                           
+[168] "call, courtship"                                                                 
+[169] "call, flight call, male"                                                         
+[170] "female, male, song"                                                              
+[171] "call, low traffic hum"                                                           
+[172] "Mating Vocalizations"                                                            
+[173] "alarm call, call, flight call"                                                   
+[174] "epigamic calls"                                                                  
+[175] "Scream, call"                                                                    
+[176] "keer call"                                                                       
+[177] "female, song"                                                                    
+[178] "growl call"                                                                      
+[179] "aggressive 'chuff' series"                                                       
+[180] "'chuff' series"                                                                  
+[181] "aggressive 'chuffing' vocalization"                                              
+[182] "territorial call"                                                                
+[183] "Grunting outburst, call"                                                         
+[184] "\"chuff\" series"                                                                
+[185] "call, grunt"                                                                     
+[186] "Kek Series"                                                                      
+[187] "male advertising call"                                                           
+[188] "'kek' series"                                                                    
+[189] "grunt duet"                                                                      
+[190] "'kek' song"                                                                      
+[191] "alarm call, call, juvenile"                                                      
+[192] "'kicker' call and grating calls"                                                 
+[193] "'kicker' call"                                                                   
+[194] "call, splashing sounds as (I THINK) two birds chase each other"                  
+[195] "call, whinny"                                                                    
+[196] "Rattle Call, call"                                                               
+[197] "weep call"                                                                       
+[198] "wing splashes"                                                                   
+[199] "begging, juvenile"                                                               
+[200] "Sandhill Cranes call, Snipe winnowing"                                           
+[201] "call and winnowing"                                                              
+[202] "call, duet call"                                                                 
+[203] "alarm call, juvenile"                                                            
+[204] "Calling to young fledglings, female, male"                                       
+[205] "distraction display"                                                             
+[206] "Flight display"                                                                  
+[207] "\"kill-deer\" call, call"                                                        
+[208] "distraction display, flight call"                                                
+[209] "flight calls/flight display"                                                     
+[210] "Long Mellow Whistle"                                                             
+[211] "call, display flight"                                                            
+[212] "'chuit' call"                                                                    
+[213] "Group call, flight call"                                                         
+[214] "Flight call"                                                                     
+[215] "feeding calls"                                                                   
+[216] "'pip' duet"                                                                      
+[217] "flushed call"                                                                    
+[218] "display flight, flight call"                                                     
+[219] "Flight Call"                                                                     
+[220] "flight call, flight song"                                                        
+[221] "call, flight call, song"                                                         
+[222] "Flight Song at 1:30, song"                                                       
+[223] "flight call, song"                                                               
+[224] "call, peet calls"                                                                
+[225] "flight display"                                                                  
+[226] "Peent call, coutship call, male, song"                                           
+[227] "Courtship call, Peent call, call"                                                
+[228] "Peent"                                                                           
+[229] "call, male, mating display"                                                      
+[230] "call, wing-whir"                                                                 
+[231] "\"peent\", \"roding\"/wing sounds, call"                                         
+[232] "Song/flight display, song"                                                       
+[233] "peent"                                                                           
+[234] "Song, including hiccup and 'peent'"                                              
+[235] "Not sure if \"song\" or alarm calls given near nest., alarm call, song"          
+[236] "winnowing and display calls"                                                     
+[237] "display songs"                                                                   
+[238] "winnowing"                                                                       
+[239] "call, display"                                                                   
+[240] "alarm call, song"                                                                
+[241] "Song"                                                                            
+[242] "Call, song"                                                                      
+[243] "Flock calls"                                                                     
+[244] "long call"                                                                       
+[245] "call, long call"                                                                 
+[246] "alarm call, begging call, call, juvenile"                                        
+[247] "Long call"                                                                       
+[248] "Long call, pair"                                                                 
+[249] "calling whilst foraging, flight call"                                            
+[250] "flight call, splash"                                                             
+[251] "flight call, juvenile"                                                           
+[252] "begging call, flight call, juvenile"                                             
+[253] "begging call, call, flight call, juvenile"                                       
+[254] "Adults and juveniles, call"                                                      
+[255] "display flight"                                                                  
+[256] "Courtship calls, call, flight call"                                              
+[257] "Aggressive call"                                                                 
+[258] "Calls, attacking calls, and clicks while in flight"                              
+[259] "call, distraction display"                                                       
+[260] "Call and wing flutter."                                                          
+[261] "flight call, keers, wavered grunts and wing flapping"                            
+[262] "Wing whir, begging call, call, juvenile, nest call, wing flapping"               
+[263] "Wing flapping, song"                                                             
+[264] "song and wing clap"                                                              
+[265] "wing flap"                                                                       
+[266] "call, wing claps on takeoff by flock"                                            
+[267] "excited interaction call-song, song"                                             
+[268] "excited interaction call-song"                                                   
+[269] "song, wingbeats"                                                                 
+[270] "nest coo"                                                                        
+[271] "song, wing sounds"                                                               
+[272] "song, wing sounds in flight"                                                     
+[273] "wing sound"                                                                      
+[274] "display flight, song"                                                            
+[275] "interaction calls, song"                                                         
+[276] "female, female song or bark series"                                              
+[277] "bill rattle"                                                                     
+[278] "guttural call series"                                                            
+[279] "bill rattle, bill rattle (rapid series)"                                         
+[280] "bill rattle, bill rattle (rapid series), song"                                   
+[281] "bill rattle (rapid series)"                                                      
+[282] "bill snap, call"                                                                 
+[283] "billed snapping, call"                                                           
+[284] "\"Coo\" call, call"                                                              
+[285] "Call?"                                                                           
+[286] "po-po-po song"                                                                   
+[287] ", soft call by nest box"                                                         
+[288] ", begging call,juvenile, cleaking"                                               
+[289] "begging call, call, female"                                                      
+[290] "song, three to four different calls are found on this recording."                
+[291] "Morse code song  and a different song type, song"                                
+[292] "alarm call, call, female, male, song"                                            
+[293] "begging call, female, juvenile"                                                  
+[294] "begging call, call, female, juvenile"                                            
+[295] "female, juvenile"                                                                
+[296] "female, flight call, male, song"                                                 
+[297] "call, shriek"                                                                    
+[298] "Scream"                                                                          
+[299] "Territorial Hooting"                                                             
+[300] "alarm call, female, female alarm call"                                           
+[301] "male calling and female alarm call"                                              
+[302] "Caterwaul"                                                                       
+[303] "call, scream/whistle-shriek"                                                     
+[304] "A duet performing a sort of territorial song/call. Not the typical WHO COOKS FOR"
+[305] "duet, song"                                                                      
+[306] "pair duet"                                                                       
+[307] "solicitation call"                                                               
+[308] "Staccato Call, call"                                                             
+[309] "Agitation trill, Song"                                                           
+[310] "call, copulation, female"                                                        
+[311] "alarm bark, male"                                                                
+[312] "chatter song, male"                                                              
+[313] "Camera zoom/shutter, alarm call"                                                 
+[314] "Skiew"                                                                           
+[315] "Double Call"                                                                     
+[316] "Skew Call"                                                                       
+[317] "Wail, alarm call"                                                                
+[318] "alarm call, call, fall vocalizations, wail"                                      
+[319] "call, cry"                                                                       
+[320] "alarm call, begging call, juvenile"                                              
+[321] "alarm call, bullfrog, call, crickets, juvenile, male"                            
+[322] "call, roost of several birds"                                                    
+[323] "call, mechanical 'booms'"                                                        
+[324] "booming, call"                                                                   
+[325] "call, soft subcall"                                                              
+[326] "Wing Boom, call"                                                                 
+[327] "song, wing whirr"                                                                
+[328] "Wing boom, clucking, flight call"                                                
+[329] "song and boom"                                                                   
+[330] "alarm call, bark/growl"                                                          
+[331] "alarm call, begging call, juvenile, sound of a cardboard box being gently shaken"
+[332] "copulation call, flight call"                                                    
+[333] "high interaction call"                                                           
+[334] "call, extended rattle"                                                           
+[335] "squee song"                                                                      
+[336] "flight call, high call, interaction call, rattle, song"                          
+[337] "flight call, high call, interaction call"                                        
+[338] "interaction calls, radio static song, seep song"                                 
+[339] "radio static song, seep song"                                                    
+[340] "radio static song"                                                               
+[341] "chase calls, song"                                                               
+[342] "call, chase call"                                                                
+[343] "seep song"                                                                       
+[344] "call, interaction calls"                                                         
+[345] "perched warning calls"                                                           
+[346] "flight fight, perched warning calls"                                             
+[347] "fight flight rattle"                                                             
+[348] "call, interaction call"                                                          
+[349] "call, chatter"                                                                   
+[350] "call, fight"                                                                     
+[351] "chase call"                                                                      
+[352] "call, fight, interaction calls"                                                  
+[353] "call, short rattle"                                                              
+[354] "call, rattle"                                                                    
+[355] "song call series"                                                                
+[356] "call, interaction rattle"                                                        
+[357] "call, chase call, interaction rattle"                                            
+[358] "call, interaction, rattle"                                                       
+[359] "call, wing buzz"                                                                 
+[360] "calls/dive display/wing sounds"                                                  
+[361] "juvenile, wing-beat"                                                             
+[362] "chip note at feeder.  Wingbeat sound compare to Ruby-throated"                   
+[363] "shuttle display"                                                                 
+[364] "call, shuttle display"                                                           
+[365] "call, display dive, shuttle display"                                             
+[366] "call, interaction call, shuttle display"                                         
+[367] "display dive, shuttle display"                                                   
+[368] "display dive"                                                                    
+[369] "call, display dive"                                                              
+[370] "call, interaction calls in flight"                                               
+[371] "call, chase calls, interaction calls"                                            
+[372] "call, chase calls"                                                               
+[373] "dive display"                                                                    
+[374] "display sound, flight call, song"                                                
+[375] "call, dive display - mechanical, song"                                           
+[376] "display dive, male"                                                              
+[377] "call and scold"                                                                  
+[378] "Display dive, song"                                                              
+[379] "twitter & tic calls"                                                             
+[380] "tic call"                                                                        
+[381] "male, wing noise"                                                                
+[382] "flight call, male, wing noise"                                                   
+[383] "flight call, mechanical wing sound"                                              
+[384] "male, wing trill"                                                                
+[385] "call, wing sounds"                                                               
+[386] "call, flight strafing sounds"                                                    
+[387] "display sounds, male, wing whirr"                                                
+[388] "call, chase call, wing whine"                                                    
+[389] "call, wing whine"                                                                
+[390] "wing whine"                                                                      
+[391] "display, wing whine"                                                             
+[392] "call, display, wing whine"                                                       
+[393] "call, interaction calls, wing whine"                                             
+[394] "chase call, wing whine"                                                          
+[395] "call and wing noise"                                                             
+[396] "Wing trill"                                                                      
+[397] "calls & wing trill"                                                              
+[398] "Wing noise, call"                                                                
+[399] "call, juvenile, male"                                                            
+[400] "call, interaction calls, rasp, wing whine"                                       
+[401] "Camera click, flight call, male"                                                 
+[402] "call, mechanical foraging"                                                       
+[403] "call, keer"                                                                      
+[404] "flight call, rattle"                                                             
+[405] "call, drumming"                                                                  
+[406] "call, calling whilst foraging"                                                   
+[407] "begging call, call, female, interaction calls, juvenile, male"                   
+[408] "call, tapping"                                                                   
+[409] "alarm call, call, tapping/foraging"                                              
+[410] "call, yuck-a yuck-a conflict calls"                                              
+[411] "call, flight call, male, tapping"                                                
+[412] "drumming, male"                                                                  
+[413] "scolding"                                                                        
+[414] "Calls from male"                                                                 
+[415] "nest carving"                                                                    
+[416] "call and begging call"                                                           
+[417] "long call and short drums"                                                       
+[418] "patterned drumming and calls"                                                    
+[419] "call, drumming, female, male"                                                    
+[420] "\"wicka\" intraspecific interaction calls, call, usual calls"                    
+[421] "drumming,call"                                                                   
+[422] "counter drumming"                                                                
+[423] "alarm call, begging call, call, juvenile, male"                                  
+[424] "scolding cries"                                                                  
+[425] "drumming, flight call"                                                           
+[426] "Bark Flecking, Tapping"                                                          
+[427] "begging call, juvenile, pecking"                                                 
+[428] "drum and calls"                                                                  
+[429] "calling whilst foraging, drumming, male"                                         
+[430] "call, male, tapping"                                                             
+[431] "Drumming and quiet calls"                                                        
+[432] "Drumming, Call"                                                                  
+[433] "squeal series"                                                                   
+[434] "drum"                                                                            
+[435] "rattle call"                                                                     
+[436] "Call and Whinny"                                                                 
+[437] "drumming, twig-tapping"                                                          
+[438] "whinny call"                                                                     
+[439] "call, displaying to females at least there were four birds, drumming"            
+[440] "alarm call, female, male"                                                        
+[441] "Drumming"                                                                        
+[442] "begging call, drumming"                                                          
+[443] "tapping, chatter call"                                                           
+[444] "chatter call"                                                                    
+[445] "Rattle calls and contact calls (Sibley)."                                        
+[446] "Rattle, call"                                                                    
+[447] "drumming, song"                                                                  
+[448] "drumming, pacific wren"                                                          
+[449] "begging, begging call, call, rattle, usual call"                                 
+[450] "call, rattle, tapping"                                                           
+[451] "call, drum"                                                                      
+[452] "call, calling whilst foraging, female"                                           
+[453] "Nestling calls"                                                                  
+[454] "Wicka, alarm call, call, wicka call as well as alarm call."                      
+[455] "Kikikikiki, call"                                                                
+[456] "short call"                                                                      
+[457] "Song and drumming"                                                               
+[458] "Call notes."                                                                     
+[459] "alarm call, begging call, call, feeding young"                                   
+[460] "Long, laughing call"                                                             
+[461] "Begging call"                                                                    
+[462] "chip duet and screams"                                                           
+[463] "courtship screams"                                                               
+[464] "Alarm?"                                                                          
+[465] "courtship interactions"                                                          
+[466] "call, juvenile, soft doubled calls by adult"                                     
+[467] "alarm call, nervous chip notes"                                                  
+[468] "phoebe call, song"                                                               
+[469] "call, unusual rhythm to part of the call"                                        
+[470] "aggression call, call"                                                           
+[471] "begging call, call of adult"                                                     
+[472] "dawn song"                                                                       
+[473] "call, trill and peep calls"                                                      
+[474] "call, flight song"                                                               
+[475] "dawn song, song"                                                                 
+[476] "bill clicking, call"                                                             
+[477] "bill snap, call, song"                                                           
+[478] "evening song"                                                                    
+[479] "interaction calls in flight"                                                     
+[480] "twilight song"                                                                   
+[481] "male, song, twittering"                                                          
+[482] "song, twitter accompanied by wing fluttering or short flights"                   
+[483] "\"rrrritts-be-yew\" song plus \"(b)rrrit\", male, song"                          
+[484] "interaction calls and trills"                                                    
+[485] "\"whit\" call, call"                                                             
+[486] "zweeoo call"                                                                     
+[487] "\"zweeoo\" call"                                                                 
+[488] "song phrase"                                                                     
+[489] "song phrases"                                                                    
+[490] "call, song phrase"                                                               
+[491] "call, song phrases"                                                              
+[492] "call, phrases"                                                                   
+[493] "dawnsong"                                                                        
+[494] "call, position call"                                                             
+[495] "male position notes, song"                                                       
+[496] "female position notes, male position notes"                                      
+[497] "male position notes"                                                             
+[498] "female position note"                                                            
+[499] "Position call"                                                                   
+[500] "Male Position Note"                                                              
+[501] "male"                                                                            
+[502] "position calls"                                                                  
+[503] "interaction growling calls, male position note"                                  
+[504] "male position note, song phrases"                                                
+[505] "calls during aerial chase"                                                       
+[506] "interaction calls, male position note"                                           
+[507] "male position note, song"                                                        
+[508] "position note"                                                                   
+[509] "male position note"                                                              
+[510] "position notes (Sibley)"                                                         
+[511] "phrases, song"                                                                   
+[512] "agressive calls"                                                                 
+[513] "agressive calls and song"                                                        
+[514] "dawn flight display with audible wingbeats, dawn song"                           
+[515] "bill snaps, flight song, male"                                                   
+[516] "song,male"                                                                       
+[517] "flight song with snaps"                                                          
+[518] "call, flight song, song"                                                         
+[519] "bill rattle, call"                                                               
+[520] "bill rattle, call, twitter"                                                      
+[521] "jumbled duet"                                                                    
+[522] "Interaction calls"                                                               
+[523] "call, nest site selection interaction calls"                                     
+[524] "call, dawn song"                                                                 
+[525] "begging call, call, interaction calls"                                           
+[526] "song?"                                                                           
+[527] "dawn? song"                                                                      
+[528] "call, flight display"                                                            
+[529] "begging call, call, sub-call"                                                    
+[530] "call, displays"                                                                  
+[531] "call, pair interaction calls"                                                    
+[532] "call, mating, song"                                                              
+[533] "adult and juvenile, call"                                                        
+[534] "dawn flight song, dawn song"                                                     
+[535] "call, vesper flight song"                                                        
+[536] "call, flight calls"                                                              
+[537] "call, mobbing calls"                                                             
+[538] "Aggressive calls"                                                                
+[539] "Dawn song., call, male"                                                          
+[540] "chip note"                                                                       
+[541] "bill snapping, call, flight call"                                                
+[542] "call, interaction between two birds"                                             
+[543] "call, whit calls"                                                                
+[544] "interaction calls (intra pair), mostly whip calls"                               
+[545] "interaction calls (intra pair)"                                                  
+[546] "call, evening song"                                                              
+[547] "call, excited trill"                                                             
+[548] "call, with just a bit of song element at 11s"                                    
+[549] "call, dawn song, song"                                                           
+[550] "call, warning and chase of Brown-headed Cowbird"                                 
+[551] "call, family group interaction calls"                                            
+[552] "call, family group calls"                                                        
+[553] "call, counter-calling"                                                           
+[554] "call, contact calls of family group"                                             
+[555] "call, calls, interaction calls"                                                  
+[556] "call, interaction calls, kip call, regular calls"                                
+[557] "'Police Whistle' Call"                                                           
+[558] "song, wheeps"                                                                    
+[559] "call, song, wheeps and trills"                                                   
+[560] "duet male and female"                                                            
+[561] "daytime song"                                                                    
+[562] "call, duet"                                                                      
+[563] "call, duet, interaction calls"                                                   
+[564] "call, duets"                                                                     
+[565] "call, squabble in flight"                                                        
+[566] "call, duet, song"                                                                
+[567] "interaction in flight"                                                           
+[568] "call, interaction calls (duet?)"                                                 
+[569] "call, interaction in flight"                                                     
+[570] "call, duets, song"                                                               
+[571] "song and call?"                                                                  
+[572] "call, mimicking Great Crested Flycatcher"                                        
+[573] "complex song, counter singing, song, song matching"                              
+[574] "rambling song"                                                                   
+[575] ", scold series"                                                                  
+[576] "begging call, flight call, juvenile, song"                                       
+[577] "begging call, call, juvenile, song"                                              
+[578] "begging call, call, flight call, juvenile, song"                                 
+[579] "rambling song, song"                                                             
+[580] "songs and short notes"                                                           
+[581] "Excited Song, Song, male, song"                                                  
+[582] "courtship song"                                                                  
+[583] "excited song"                                                                    
+[584] "Normal Song"                                                                     
+[585] "courtship, male, song"                                                           
+[586] "call, courtship, female, male, song"                                             
+[587] "chimp call, male, song"                                                          
+[588] "chip notes, song"                                                                
+[589] "call, male, unusual call"                                                        
+[590] "complex song"                                                                    
+[591] "scold, song"                                                                     
+[592] "\"rambling\" song"                                                               
+[593] "Fledgling call"                                                                  
+[594] "fast song, chattering calls"                                                     
+[595] "fast song"                                                                       
+[596] "Song and scold"                                                                  
+[597] "song, tip notes"                                                                 
+[598] "tuk calls"                                                                       
+[599] "bill snapping, song"                                                             
+[600] "whisper song"                                                                    
+[601] "Cooper's Hawk imitation, call"                                                   
+[602] "Cooper's Hawk Imitation"                                                         
+[603] "Yelp, call"                                                                      
+[604] "Red-tailed Hawk impression, call"                                                
+[605] "call, growl call, mimicry"                                                       
+[606] "call, mimicry"                                                                   
+[607] "call, queedle call, song"                                                        
+[608] "Cooper's Hawk imitation"                                                         
+[609] "mimicry"                                                                         
+[610] "call, mobbing call"                                                              
+[611] "alarm call, drumming"                                                            
+[612] "call, mimic"                                                                     
+[613] "call and whisper song"                                                           
+[614] "Imitation"                                                                       
+[615] "?"                                                                               
+[616] "call, begging calls"                                                             
+[617] "call, female, juvenile, male"                                                    
+[618] "Calls from members of a family group"                                            
+[619] "call, example of what I call the \"chuckle\" call"                               
+[620] "call, trills, with \"harsh trill\" at 0:21 and high thin trills at 0:54-59"      
+[621] "call, includes what I call \"metalic\" calls"                                    
+[622] "also apparent contact calls (nasal), call, chorus of trills"                     
+[623] "and what I call the \"chuckle\" at 0:36, call, trills, typical calls"            
+[624] "call of adults and begging call"                                                 
+[625] "whisper song and calls"                                                          
+[626] "Monologue, song, sub-adult, vocal play"                                          
+[627] "female"                                                                          
+[628] "Juvenile Babble, call, juvenile"                                                 
+[629] "call, flight call, wing noise"                                                   
+[630] "threat calls"                                                                    
+[631] "call, croaking call"                                                             
+[632] "call,begging call"                                                               
+[633] "calling to drive away a predator, wing beats."                                   
+[634] "bill snapping, call, water droplet call"                                         
+[635] "song, wooden \"song\""                                                           
+[636] "bill clapping, call"                                                             
+[637] "flock calls"                                                                     
+[638] "alarm call, call, flight call, juvenile, song"                                   
+[639] "Song?"                                                                           
+[640] "song with slight variation"                                                      
+[641] "Various, song"                                                                   
+[642] "Songs and scolds"                                                                
+[643] "burry song, call"                                                                
+[644] "call, multiple calls"                                                            
+[645] "contact call, scold"                                                             
+[646] "presumed plastic song"                                                           
+[647] "song,call"                                                                       
+[648] "gargle call"                                                                     
+[649] "\"bell\" call, call"                                                             
+[650] "nestling chatter"                                                                
+[651] "call, one song"                                                                  
+[652] "Gargle call"                                                                     
+[653] "gargle"                                                                          
+[654] "tew, twitter"                                                                    
+[655] "call, flight call, male, song"                                                   
+[656] "flight calls"                                                                    
+[657] "adult and fledglings together, call"                                             
+[658] "bees, call, red-winged blackbird, song"                                          
+[659] "alarm call, begging call, call"                                                  
+[660] "call, song, wing flaps"                                                          
+[661] "alarm call, begging call"                                                        
+[662] "tiny chip notes"                                                                 
+[663] "call series"                                                                     
+[664] "female, male, nestlings, song"                                                   
+[665] "begging call, song"                                                              
+[666] "female song"                                                                     
+[667] "plastic song"                                                                    
+[668] "counter-singing, song"                                                           
+[669] "chip notes"                                                                      
+[670] "nuanced buzz at beginning and end of song, song"                                 
+[671] "Scolding."                                                                       
+[672] "Song, various calls"                                                             
+[673] "juvenile, song"                                                                  
+[674] "juvenile, male, song"                                                            
+[675] "Teakettle song, song"                                                            
+[676] "scolding call"                                                                   
+[677] "call, smacks and paired smacks"                                                  
+[678] "Alarm call, song"                                                                
+[679] "call, cheer call"                                                                
+[680] "begging call, nestlings"                                                         
+[681] "call, chatter/scold"                                                             
+[682] "call, female song, song"                                                         
+[683] "begging call, bill snapping of adult male, juvenile"                             
+[684] "song, call"                                                                      
+[685] "Scolding call"                                                                   
+[686] "scold calls"                                                                     
+[687] "many calls"                                                                      
+[688] "call, doublet call"                                                              
+[689] "peeping notes"                                                                   
+[690] "song and tapping"                                                                
+[691] "Chatter"                                                                         
+[692] "song? and calls"                                                                 
+[693] "Foraging calls, call"                                                            
+[694] "(response to stoat), alarm call"                                                 
+[695] "begging call, call, contact calls, song"                                         
+[696] "begging calls, call, contact calls, song"                                        
+[697] "slower song, song"                                                               
+[698] "apparently the double-yank call from pair, call, female, male"                   
+[699] "mimics and meows, song"                                                          
+[700] "call, ratchet call, wing noise"                                                  
+[701] "ratchet call"                                                                    
+[702] "call, call & response"                                                           
+[703] "alarm call, call, nestling call"                                                 
+[704] "call, mimicry, song"                                                             
+[705] "alarm call, call, scolding call"                                                 
+[706] "call while strafing predator"                                                    
+[707] "call, scold"                                                                     
+[708] "Mimic, song"                                                                     
+[709] "Carolina Wren and Eastern Kingbird, mimicry of Blue Jay, song"                   
+[710] "contact call, juvenile"                                                          
+[711] "soft song, song"                                                                 
+[712] "calls at dawn"                                                                   
+[713] "female, female bird song, male, song"                                            
+[714] "begging call, nestling call"                                                     
+[715] "call, song, variety in interaction"                                              
+[716] "call, kuk/chek call, song"                                                       
+[717] "call, churr/rattle call, uncommon soft churrs and chortles"                      
+[718] "call, churr/rattle call, kuk call, song, variety of calls"                       
+[719] "call, churr/rattle call, song"                                                   
+[720] "alarm call, kuk/chek call"                                                       
+[721] "churr/rattle call"                                                               
+[722] "call, kuk/chek call"                                                             
+[723] "kuk/chek call"                                                                   
+[724] "birds calling at dusk, call, ratchet call"                                       
+[725] "birds calling at dusk, call"                                                     
+[726] "Call, juvenile"                                                                  
+[727] "\"chuck\" call"                                                                  
+[728] "female, male, scold"                                                             
+[729] "call, female, male, pair"                                                        
+[730] "dawn calling"                                                                    
+[731] "calls (song?)"                                                                   
+[732] "phrases"                                                                         
+[733] "\"hawk alarm\", alarm call"                                                      
+[734] "Contact and alarm call"                                                          
+[735] "call, whisper songs"                                                             
+[736] "alarm/contact call"                                                              
+[737] "Nocturnal flight call"                                                           
+[738] "\"whit\" call"                                                                   
+[739] "chuck, flight call"                                                              
+[740] "three types of call"                                                             
+[741] "call, quiet songs"                                                               
+[742] "NFC, Nocturnal Flight Call, flight call"                                         
+[743] "song, whisper song after 80s"                                                    
+[744] "alt song"                                                                        
+[745] "vesper song"                                                                     
+[746] "plastic song, song"                                                              
+[747] "call, whisper song"                                                              
+[748] "\"hawk\" alarm"                                                                  
+[749] "call, male, unusual squeak call"                                                 
+[750] "alarm call, call, female, flight call, male, song"                               
+[751] "predator scold"                                                                  
+[752] "mob song"                                                                        
+[753] "begging call, call, female, juvenile, male"                                      
+[754] "call, display flight, song"                                                      
+[755] "flight dislay"                                                                   
+[756] "call, flight dislay"                                                             
+[757] "Location Call"                                                                   
+[758] "Subsong"                                                                         
+[759] "warbling song"                                                                   
+[760] "call, song at dawn"                                                              
+[761] "vesper singing"                                                                  
+[762] "begging call, juvenile, song"                                                    
+[763] "call, female song"                                                               
+[764] "call notes of male"                                                              
+[765] "alarm call, flight call, interaction calls"                                      
+[766] "female, flight call, juvenile, male"                                             
+[767] "alarm call, female, flight call, male, recordist noise, wind"                    
+[768] "Flight Call, Song"                                                               
+[769] "aerial displays"                                                                 
+[770] "song from ground"                                                                
+[771] "song "                                                                           
+[772] "'chewlup' call"                                                                  
+[773] "call, flight clicking calls, flight song, song"                                  
+[774] "call, flight clicking calls"                                                     
+[775] "Flight song"                                                                     
+[776] "flight song, song"                                                               
+[777] "subsong"                                                                         
+[778] "tick call"                                                                       
+[779] "chitter call"                                                                    
+[780] "growl/interaction call"                                                          
+[781] "juvenile, subsong"                                                               
+[782] "song, call, chase, interaction ticks"                                            
+[783] "interaction tick series, song,call"                                              
+[784] "call, excited, regular and high seep"                                            
+[785] "call, excited calls"                                                             
+[786] "call, juvenile, male, subsong"                                                   
+[787] "call, chip"                                                                      
+[788] "'zeet' call"                                                                     
+[789] "Wing noise, song"                                                                
+[790] "call, song, twittering"                                                          
+[791] "call, interaction calls, song, twittering"                                       
+[792] "Song, call, flight call"                                                         
+[793] "call, flight call, juvenile, male, subsong"                                      
+[794] "call, chatter, partial song"                                                     
+[795] "call, chip note"                                                                 
+[796] "call, laughter call, multiple calls"                                             
+[797] "\"seet\" calls, flight call"                                                     
+[798] "\"pink\" alarm calls, some in flight"                                            
+[799] "Alarm, flight/loc, flocking calls, song"                                         
+[800] "\"pink\", alarm call"                                                            
+[801] "Call, Subsong"                                                                   
+[802] "subsong and calls"                                                               
+[803] "Calls, Subsong"                                                                  
+[804] "begging call, call, male"                                                        
+[805] "begging and chack varient, juvenile"                                             
+[806] "chip notes."                                                                     
+[807] "flight call perched"                                                             
+[808] "call and flight song"                                                            
+[809] "alternate Song, song"                                                            
+[810] "excited song (natural)"                                                          
+[811] "alternate song"                                                                  
+[812] "flight call, perched bird"                                                       
+[813] "song, flock calls"                                                               
+[814] "song, trill"                                                                     
+[815] "call, wings sounds"                                                              
+[816] "aberrant song, song"                                                             
+[817] "\"simple song\" of Brewer's Sparrow, song"                                       
+[818] "chatter chorus of family group"                                                  
+[819] "song chorus"                                                                     
+[820] "trill and scolding"                                                              
+[821] "song, interact, twitter, call"                                                   
+[822] "flight fight then perched interaction song-calls"                                
+[823] "interactions"                                                                    
+[824] "Tink, call"                                                                      
+[825] "tick series"                                                                     
+[826] "interaction tick series, song"                                                   
+[827] "call, interaction tick series"                                                   
+[828] "call (seep)"                                                                     
+[829] "hesitant song"                                                                   
+[830] "call of juvenile, call and song of adult"                                        
+[831] "call, typical and alternate song"                                                
+[832] "flight call, male, song"                                                         
+[833] "flight song, song, female calls"                                                 
+[834] "flight song, song, chatter 'song' interaction"                                   
+[835] "flight song, song, flight chatter song, female calls"                            
+[836] "flight songs, chatter song in flight"                                            
+[837] "chatter song partially in flight, song"                                          
+[838] "song, chatter song"                                                              
+[839] "chatter"                                                                         
+[840] "male song, female calls"                                                         
+[841] "interaction"                                                                     
+[842] "song, flight song"                                                               
+[843] "song, 2 flight songs"                                                            
+[844] "interaction calls by pair; flight song"                                          
+[845] "calls by female while male singing"                                              
+[846] "calls--pair interaction"                                                         
+[847] "song, flight song (last)"                                                        
+[848] "song, flight song (last song)"                                                   
+[849] "song in display flight"                                                          
+[850] "dawn chatter song"                                                               
+[851] "chatter song, song"                                                              
+[852] "chatter song, song, call"                                                        
+[853] "chatter song"                                                                    
+[854] "chatter song, calls"                                                             
+[855] "subsong or chatter song"                                                         
+[856] "call, some mechanical noise as birds move through brush"                         
+[857] "seep"                                                                            
+[858] "calls (squeak series)"                                                           
+[859] "calls (mew)"                                                                     
+[860] "calls (3 types)"                                                                 
+[861] "Complex song, call, song"                                                        
+[862] "trill"                                                                           
+[863] "Double Whistle"                                                                  
+[864] "nasal call, song"                                                                
+[865] "odd variant song, song"                                                          
+[866] "call, chewink, male"                                                             
+[867] "call, some song."                                                                
+[868] "call chatter, soft song, harsh calls"                                            
+[869] "interaction/chase of Mexican Jay"                                                
+[870] "'seet' call"                                                                     
+[871] "call, flight call, interaction call"                                             
+[872] "soft chatter song"                                                               
+[873] "Contact calling between two individuals, call"                                   
+[874] "seep call, regular call, interaction duet"                                       
+[875] "song, regular and harsh calls"                                                   
+[876] "interaction duet"                                                                
+[877] "interaction calls of family group"                                               
+[878] "call, interaction duet"                                                          
+[879] "calls, hard rattle, interaction duets, harsh churr"                              
+[880] "flight calls then interaction duet calls"                                        
+[881] "interaction duet calls"                                                          
+[882] "squeel duet"                                                                     
+[883] "song, wingbeats in chases"                                                       
+[884] "flight song with wingbeats"                                                      
+[885] "rasp call"                                                                       
+[886] ", \"tocking\" series, call"                                                      
+[887] "Song during display flight., male, song"                                         
+[888] "Rattle, call, song"                                                              
+[889] "Chup, Rattle, call, song"                                                        
+[890] "secondary softer vocalization, song"                                             
+[891] "call, churts and sputters, song"                                                 
+[892] "call, song, sputters"                                                            
+[893] "alarm call, call, flight call, male, song"                                       
+[894] "call, churts and sputters"                                                       
+[895] "churts and sputters, song"                                                       
+[896] "in flight argument"                                                              
+[897] "call, subsong"                                                                   
+[898] "call, dawn song and rattles"                                                     
+[899] "call, excited flight call, rattle"                                               
+[900] "call, cherk call, clear call, rattle, song"                                      
+[901] "cherk call, song"                                                                
+[902] "cherk call, rattle"                                                              
+[903] "rattle"                                                                          
+[904] "rattle, song"                                                                    
+[905] "cherk calls, clear whistle"                                                      
+[906] "churk calls"                                                                     
+[907] "clear call"                                                                      
+[908] "chatter, song"                                                                   
+[909] "one-note-at-a-time song, or call?"                                               
+[910] "call, interaction rattles and wingbeats"                                         
+[911] "call, interaction rattles"                                                       
+[912] "dawn phrases"                                                                    
+[913] "Call & Scold"                                                                    
+[914] "Call notes, Veek call and rapid chatter, call"                                   
+[915] "call, juvenile, male, song"                                                      
+[916] "male, trill"                                                                     
+[917] "male, song, tsew"                                                                
+[918] "Atypical male song, male, song"                                                  
+[919] "2 or 3 chip notes followed by a one note call"                                   
+[920] "call, female, female \"song\", male"                                             
+[921] "Call, alarm call"                                                                
+[922] "display calls and flight, male"                                                  
+[923] "chuck, female, gurgle song, male, rattle, whistle song"                          
+[924] "Subsong, male"                                                                   
+[925] "display, male, song"                                                             
+[926] "call, plik call, song"                                                           
+[927] "call, plik call"                                                                 
+[928] "flock of about 20, song"                                                         
+[929] "buzzy call, call"                                                                
+[930] "flight song, male"                                                               
+[931] "call, flight song, male, song, wing noise"                                       
+[932] "call, female, flight call, juvenile"                                             
+[933] "alarm call, call, female, female and male defending a nest sight from another pa"
+[934] "call, female, song"                                                              
+[935] "begging call, female, male, singlet call note"                                   
+[936] "Doublet call, call, male"                                                        
+[937] "song, typical and complex song"                                                  
+[938] "Interaction calls, call"                                                         
+[939] "call, complex song, song"                                                        
+[940] "high chip"                                                                       
+[941] "'flight' song, call"                                                             
+[942] "Chip notes."                                                                     
+[943] "Territorial, agitated song, male"                                                
+[944] "Alternate song"                                                                  
+[945] "call, alternate song"                                                            
+[946] "alternate song and song"                                                         
+[947] "alternate song and call"                                                         
+[948] "Alternate Song"                                                                  
+[949] "call and alternate song"                                                         
+[950] "Dzit, call"                                                                      
+[951] "Chip, call"                                                                      
+[952] "aberrant song"                                                                   
+[953] "call, chip, male, song"                                                          
+[954] "complex and territorial, song"                                                   
+[955] "Agitated calls"                                                                  
+[956] "Plastic song"                                                                    
+[957] "Contact calling between two individuals"                                         
+[958] "begging call, call, song"                                                        
+[959] "call, chatter, male, song"                                                       
+[960] "flight call and call"                                                            
+[961] "Complex song, call, male, song"                                                  
+[962] "Contact call"                                                                    
+[963] "flight call, foraging bird"                                                      
+[964] "high chip, male"                                                                 
+[965] "adult male, song"                                                                
+[966] "song, chip notes"                                                                
+[967] "short song"                                                                      
+[968] "Song, Uccented?"                                                                 
+[969] "Song, accented"                                                                  
+[970] "male, song, twitter buzz"                                                        
+[971] "Chip notes on recording could also be Audubon's., song"                          
+[972] "alternate song, male, song"                                                      
+[973] "atypical song, song"                                                             
+[974] "call an song"                                                                    
+[975] "song - accented ending"                                                          
+[976] "Flight call, contact call, song"                                                 
+[977] "vesper calling"                                                                  
+[978] "call, male, song, whisper song"                                                  
+[979] "call, small song bites"                                                          
+[980] "alarm call, call, female"                                                        
+[981] "Several different song types appear in this recording of part of a single bout.,"
+[982] "male-female duet, song"                                                          
+[983] "song, wings"                                                                     
+[984] "'chek' call"                                                                     
+[985] "soundscape at dawn"                                                              
+[986] "call, drumming, song"                                                            
+[987] "alternate song, song"                                                            
+[988] "alarm call, call, drumming, song"                                                
+[989] "begging call, call, male, song"                                                  
+[990] "Dawn Chorus"                                                                     
+[991] "alarm call, attack call, call"                                                   
+[992] "American Bull Frog, call, female, male, song"                                    
+[993] "call, chorus"                                                                    
+[994] "grazing"                                                                         
+[995] "morning chorus"                                                                  
+[996] "Odd juvenile call"                                                               
+[997] "call, chattering, interaction"                                                   
+[1] "How many recordings per signal type?"
+[1] "# Luckily, it's very easy to filter the signals we want,filter only songs"
+[1] "# Check resulting data frame"
+'data.frame':	8276 obs. of  17 variables:
+ $ Recording_ID     : Factor w/ 8276 levels "418340","1136",..: 1 2 3 4 5 6 7 8 9 10 ...
+ $ Genus            : Factor w/ 238 levels "Branta","Spatula",..: 1 1 2 3 4 4 5 5 6 6 ...
+ $ Specific_epithet : Factor w/ 408 levels "bicolor","canadensis",..: 2 2 4 6 9 9 10 10 12 12 ...
+ $ Subspecies       : Factor w/ 375 levels "","occidentalis",..: 1 1 1 1 1 1 1 1 1 1 ...
+ $ English_name     : Factor w/ 475 levels "Canada Goose",..: 1 1 2 3 4 4 5 5 6 6 ...
+ $ Recordist        : Factor w/ 308 levels "Jim Holmes","Paul Marvin",..: 11 29 11 1 3 3 30 30 3 3 ...
+ $ Country          : Factor w/ 1 level "United States": 1 1 1 1 1 1 1 1 1 1 ...
+ $ Locality         : Factor w/ 2598 levels "Orlando Wetlands, Christmas, Orange County, Florida",..: 8 30 56 70 5 5 42 42 76 86 ...
+ $ Latitude         : Factor w/ 2765 levels "28.5785","28.2267",..: 8 28 52 65 5 5 40 40 71 79 ...
+ $ Longitude        : Factor w/ 2773 levels "-80.9961","-80.7645",..: 8 28 51 64 5 5 39 39 70 78 ...
+ $ Vocalization_type: Factor w/ 346 levels "song","flying in and landing on water, male, song",..: 1 1 2 1 3 3 1 1 3 3 ...
+ $ Audio_file       : Factor w/ 8276 levels "//www.xeno-canto.org/418340/download",..: 1 2 3 4 5 6 7 8 9 10 ...
+ $ License          : Factor w/ 7 levels "//creativecommons.org/licenses/by-nc-sa/4.0/",..: 1 3 1 1 2 2 1 1 2 2 ...
+ $ Url              : Factor w/ 8276 levels "https://www.xeno-canto.org/418340",..: 1 2 3 4 5 6 7 8 9 10 ...
+ $ Quality          : Factor w/ 1 level "A": 1 1 1 1 1 1 1 1 1 1 ...
+ $ Time             : Factor w/ 1171 levels "18:00","06:47",..: 25 19 95 96 119 119 121 122 136 137 ...
+ $ Date             : Factor w/ 1968 levels "2016-05-14","2014-06-08",..: 13 32 16 86 102 102 48 48 106 36 ...
+[1] "# Now, how many recordings per locality"
+[1] 17
+[1] 8276
+[1] "# Loop starts and downnload file by file"
+Downloading files...
+   |                                                  | 0 % ~calculating     |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed = 03s
+double-checking downloaded files
+[1] "loop number is "
+[1] 60
+[1] //www.xeno-canto.org/179301/download
+8276 Levels: //www.xeno-canto.org/418340/download ...
+[1] "/home/dan/Bird/dananjaya"
+   |                                                  | 0 % ~calculating     |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed = 01s
+All files can be read[1] "# Let's create a list of all the recordings in the directory"
+[1] "# We will use this list to downsample the wav files so the following analyses go a bit faster"
+[1] "# This subset is based on the list of wav files we created above,after I changed the code wav has only one file name"
+Detecting signals in sound files:   |                                                  | 0 % ~calculating     |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed = 26s
+Producing long spectrogram:   |                                                  | 0 % ~calculating     |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed = 08s
+[1] "show output of autodetec"
+'data.frame':	3 obs. of  4 variables:
+ $ sound.files: Factor w/ 1 level "Colinus-virginianus-179301.wav": 1 1 1
+ $ selec      : int  1 2 3
+ $ start      : num  3.85 16.69 30.13
+ $ end        : num  4.02 16.88 30.32
+[1] 3
+   |                                                  | 0 % ~calculating     |+++++++++++++++++                                 | 33% ~00s             |++++++++++++++++++++++++++++++++++                | 67% ~00s             |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed = 00s
+[1] "# Double check the number of selection per sound files"
+   |                                                  | 0 % ~calculating     |+++++++++++++++++                                 | 33% ~00s             |++++++++++++++++++++++++++++++++++                | 67% ~00s             |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed = 00s
+'data.frame':	3 obs. of  28 variables:
+ $ sound.files: Factor w/ 1 level "Colinus-virginianus-179301.wav": 1 1 1
+ $ selec      : int  1 2 3
+ $ duration   : num  0.171 0.181 0.185
+ $ meanfreq   : num  2.6 2.56 2.74
+ $ sd         : num  0.965 1.002 1.153
+ $ freq.median: num  2.34 2.3 2.38
+ $ freq.Q25   : num  2.21 2.19 2.22
+ $ freq.Q75   : num  2.61 2.45 2.81
+ $ freq.IQR   : num  0.393 0.26 0.59
+ $ time.median: num  0.0854 0.0972 0.1138
+ $ time.Q25   : num  0.0569 0.0556 0.0569
+ $ time.Q75   : num  0.128 0.139 0.142
+ $ time.IQR   : num  0.0712 0.0833 0.0854
+ $ skew       : num  5.09 5.25 4.92
+ $ kurt       : num  30.6 31.6 31.4
+ $ sp.ent     : num  0.72 0.717 0.762
+ $ time.ent   : num  0.958 0.956 0.952
+ $ entropy    : num  0.69 0.686 0.726
+ $ sfm        : num  0.0757 0.0948 0.1277
+ $ meandom    : num  2.38 2.42 2.4
+ $ mindom     : num  2.02 1.98 1.98
+ $ maxdom     : num  3.01 3.06 3.06
+ $ dfrange    : num  0.991 1.077 1.077
+ $ modindx    : num  2.3 1.08 1.16
+ $ startdom   : num  2.02 1.98 1.98
+ $ enddom     : num  3.01 2.97 2.97
+ $ dfslope    : num  5.8 5.48 5.36
+ $ meanpeakf  : num  2.15 2.19 2.24
+Downloading files...
+   |                                                  | 0 % ~calculating     |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed = 04s
+double-checking downloaded files
+[1] "loop number is "
+[1] 61
+[1] //www.xeno-canto.org/172969/download
+8276 Levels: //www.xeno-canto.org/418340/download ...
+[1] "/home/dan/Bird/dananjaya"
+   |                                                  | 0 % ~calculating     |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed = 22s
+<simpleError in checkwavs(): no .wav files in working directory>
+Downloading files...
+   |                                                  | 0 % ~calculating     |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed = 04s
+double-checking downloaded files
+[1] "loop number is "
+[1] 62
+[1] //www.xeno-canto.org/138626/download
+8276 Levels: //www.xeno-canto.org/418340/download ...
+[1] "/home/dan/Bird/dananjaya"
+   |                                                  | 0 % ~calculating     |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed = 20s
+All files can be read[1] "# Let's create a list of all the recordings in the directory"
+[1] "# We will use this list to downsample the wav files so the following analyses go a bit faster"
+[1] "# This subset is based on the list of wav files we created above,after I changed the code wav has only one file name"
+Detecting signals in sound files:   |                                                  | 0 % ~calculating     |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed = 01m 52s
+Producing long spectrogram:   |                                                  | 0 % ~calculating     |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed = 12s
+[1] "show output of autodetec"
+'data.frame':	47 obs. of  4 variables:
+ $ sound.files: Factor w/ 1 level "Colinus-virginianus-138626.wav": 1 1 1 1 1 1 1 1 1 1 ...
+ $ selec      : int  1 2 3 4 5 6 7 8 9 10 ...
+ $ start      : num  3.64 6.03 11.68 12.68 13.58 ...
+ $ end        : num  3.75 6.14 11.82 12.84 13.7 ...
+[1] 47
+   |                                                  | 0 % ~calculating     |++                                                | 2 % ~01s             |+++                                               | 4 % ~01s             |++++                                              | 6 % ~01s             |+++++                                             | 9 % ~01s             |++++++                                            | 11% ~01s             |+++++++                                           | 13% ~01s             |++++++++                                          | 15% ~01s             |+++++++++                                         | 17% ~01s             |++++++++++                                        | 19% ~01s             |+++++++++++                                       | 21% ~01s             |++++++++++++                                      | 23% ~01s             |+++++++++++++                                     | 26% ~01s             |++++++++++++++                                    | 28% ~01s             |+++++++++++++++                                   | 30% ~01s             |++++++++++++++++                                  | 32% ~01s             |++++++++++++++++++                                | 34% ~00s             |+++++++++++++++++++                               | 36% ~00s             |++++++++++++++++++++                              | 38% ~00s             |+++++++++++++++++++++                             | 40% ~00s             |++++++++++++++++++++++                            | 43% ~00s             |+++++++++++++++++++++++                           | 45% ~00s             |++++++++++++++++++++++++                          | 47% ~00s             |+++++++++++++++++++++++++                         | 49% ~00s             |++++++++++++++++++++++++++                        | 51% ~00s             |+++++++++++++++++++++++++++                       | 53% ~00s             |++++++++++++++++++++++++++++                      | 55% ~00s             |+++++++++++++++++++++++++++++                     | 57% ~00s             |++++++++++++++++++++++++++++++                    | 60% ~00s             |+++++++++++++++++++++++++++++++                   | 62% ~00s             |++++++++++++++++++++++++++++++++                  | 64% ~00s             |+++++++++++++++++++++++++++++++++                 | 66% ~00s             |+++++++++++++++++++++++++++++++++++               | 68% ~00s             |++++++++++++++++++++++++++++++++++++              | 70% ~00s             |+++++++++++++++++++++++++++++++++++++             | 72% ~00s             |++++++++++++++++++++++++++++++++++++++            | 74% ~00s             |+++++++++++++++++++++++++++++++++++++++           | 77% ~00s             |++++++++++++++++++++++++++++++++++++++++          | 79% ~00s             |+++++++++++++++++++++++++++++++++++++++++         | 81% ~00s             |++++++++++++++++++++++++++++++++++++++++++        | 83% ~00s             |+++++++++++++++++++++++++++++++++++++++++++       | 85% ~00s             |++++++++++++++++++++++++++++++++++++++++++++      | 87% ~00s             |+++++++++++++++++++++++++++++++++++++++++++++     | 89% ~00s             |++++++++++++++++++++++++++++++++++++++++++++++    | 91% ~00s             |+++++++++++++++++++++++++++++++++++++++++++++++   | 94% ~00s             |++++++++++++++++++++++++++++++++++++++++++++++++  | 96% ~00s             |+++++++++++++++++++++++++++++++++++++++++++++++++ | 98% ~00s             |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed = 01s
+[1] "# Double check the number of selection per sound files"
+   |                                                  | 0 % ~calculating     |++++++++++                                        | 20% ~00s             |++++++++++++++++++++                              | 40% ~00s             |++++++++++++++++++++++++++++++                    | 60% ~00s             |++++++++++++++++++++++++++++++++++++++++         | 80% ~00s             |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed = 00s
+'data.frame':	5 obs. of  28 variables:
+ $ sound.files: Factor w/ 1 level "Colinus-virginianus-138626.wav": 1 1 1 1 1
+ $ selec      : int  4 18 21 40 44
+ $ duration   : num  0.165 0.179 0.167 0.159 0.157
+ $ meanfreq   : num  2.31 2.17 2.18 2.21 2.2
+ $ sd         : num  0.973 0.699 0.72 0.807 0.808
+ $ freq.median: num  2.07 2.08 2.08 2.07 2.08
+ $ freq.Q25   : num  2.02 2.02 2.02 2.01 2.02
+ $ freq.Q75   : num  2.17 2.18 2.18 2.17 2.17
+ $ freq.IQR   : num  0.146 0.162 0.162 0.151 0.16
+ $ time.median: num  0.1098 0.0963 0.0833 0.0866 0.0855
+ $ time.Q25   : num  0.0549 0.055 0.0416 0.0433 0.0427
+ $ time.Q75   : num  0.137 0.138 0.125 0.13 0.114
+ $ time.IQR   : num  0.0823 0.0826 0.0833 0.0866 0.0712
+ $ skew       : num  7.42 6.85 6.29 6.41 6.4
+ $ kurt       : num  62.8 56.5 46.1 47.1 47.5
+ $ sp.ent     : num  0.619 0.615 0.618 0.619 0.622
+ $ time.ent   : num  0.953 0.956 0.958 0.959 0.961
+ $ entropy    : num  0.59 0.588 0.592 0.594 0.598
+ $ sfm        : num  0.0596 0.0325 0.0348 0.0446 0.0446
+ $ meandom    : num  2.04 2.08 2.07 2.09 2.07
+ $ mindom     : num  1.98 1.94 1.94 1.94 1.94
+ $ maxdom     : num  2.2 2.28 2.28 2.28 2.24
+ $ dfrange    : num  0.215 0.345 0.345 0.345 0.301
+ $ modindx    : num  1.6 2.5 2.12 1.25 2.14
+ $ startdom   : num  1.98 1.94 1.94 1.94 1.94
+ $ enddom     : num  2.07 2.2 2.24 2.28 2.24
+ $ dfslope    : num  0.523 1.445 1.81 2.171 1.924
+ $ meanpeakf  : num  2.02 2.02 1.97 1.97 2.02
+Downloading files...
+   |                                                  | 0 % ~calculating     |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed = 05s
+double-checking downloaded files
+[1] "loop number is "
+[1] 63
+[1] //www.xeno-canto.org/138625/download
+8276 Levels: //www.xeno-canto.org/418340/download ...
+[1] "/home/dan/Bird/dananjaya"
+   |                                                  | 0 % ~calculating     |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed = 21s
+All files can be read[1] "# Let's create a list of all the recordings in the directory"
+[1] "# We will use this list to downsample the wav files so the following analyses go a bit faster"
+[1] "# This subset is based on the list of wav files we created above,after I changed the code wav has only one file name"
+Detecting signals in sound files:   |                                                  | 0 % ~calculating     |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed = 02m 16s
+Producing long spectrogram:   |                                                  | 0 % ~calculating     |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed = 14s
+[1] "show output of autodetec"
+'data.frame':	39 obs. of  4 variables:
+ $ sound.files: Factor w/ 1 level "Colinus-virginianus-138625.wav": 1 1 1 1 1 1 1 1 1 1 ...
+ $ selec      : int  1 2 3 4 5 6 7 8 9 10 ...
+ $ start      : num  34.9 36.4 37.9 39.5 53.1 ...
+ $ end        : num  35 36.6 38.1 39.7 53.2 ...
+[1] 39
+   |                                                  | 0 % ~calculating     |++                                                | 3 % ~01s             |+++                                               | 5 % ~01s             |++++                                              | 8 % ~01s             |++++++                                            | 10% ~01s             |+++++++                                           | 13% ~01s             |++++++++                                          | 15% ~01s             |+++++++++                                         | 18% ~01s             |+++++++++++                                       | 21% ~01s             |++++++++++++                                      | 23% ~01s             |+++++++++++++                                     | 26% ~00s             |+++++++++++++++                                   | 28% ~00s             |++++++++++++++++                                  | 31% ~00s             |+++++++++++++++++                                 | 33% ~00s             |++++++++++++++++++                                | 36% ~00s             |++++++++++++++++++++                              | 38% ~00s             |+++++++++++++++++++++                             | 41% ~00s             |++++++++++++++++++++++                            | 44% ~00s             |++++++++++++++++++++++++                          | 46% ~00s             |+++++++++++++++++++++++++                         | 49% ~00s             |++++++++++++++++++++++++++                        | 51% ~00s             |+++++++++++++++++++++++++++                       | 54% ~00s             |+++++++++++++++++++++++++++++                     | 56% ~00s             |++++++++++++++++++++++++++++++                    | 59% ~00s             |+++++++++++++++++++++++++++++++                   | 62% ~00s             |+++++++++++++++++++++++++++++++++                 | 64% ~00s             |++++++++++++++++++++++++++++++++++                | 67% ~00s             |+++++++++++++++++++++++++++++++++++               | 69% ~00s             |++++++++++++++++++++++++++++++++++++              | 72% ~00s             |++++++++++++++++++++++++++++++++++++++            | 74% ~00s             |+++++++++++++++++++++++++++++++++++++++           | 77% ~00s             |++++++++++++++++++++++++++++++++++++++++          | 79% ~00s             |++++++++++++++++++++++++++++++++++++++++++        | 82% ~00s             |+++++++++++++++++++++++++++++++++++++++++++       | 85% ~00s             |++++++++++++++++++++++++++++++++++++++++++++      | 87% ~00s             |+++++++++++++++++++++++++++++++++++++++++++++     | 90% ~00s             |+++++++++++++++++++++++++++++++++++++++++++++++   | 92% ~00s             |++++++++++++++++++++++++++++++++++++++++++++++++  | 95% ~00s             |+++++++++++++++++++++++++++++++++++++++++++++++++ | 97% ~00s             |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed = 01s
+[1] "# Double check the number of selection per sound files"
+   |                                                  | 0 % ~calculating     |++++++++++                                        | 20% ~00s             |++++++++++++++++++++                              | 40% ~00s             |++++++++++++++++++++++++++++++                    | 60% ~00s             |++++++++++++++++++++++++++++++++++++++++         | 80% ~00s             |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed = 00s
+'data.frame':	5 obs. of  28 variables:
+ $ sound.files: Factor w/ 1 level "Colinus-virginianus-138625.wav": 1 1 1 1 1
+ $ selec      : int  8 14 15 30 37
+ $ duration   : num  0.1058 0.1191 0.1173 0.0961 0.1344
+ $ meanfreq   : num  2.18 2.16 2.37 4.56 2.19
+ $ sd         : num  0.535 0.501 0.46 0.849 0.658
+ $ freq.median: num  2.1 2.08 2.31 4.59 2.09
+ $ freq.Q25   : num  2.05 2.03 2.15 4.57 2.06
+ $ freq.Q75   : num  2.19 2.17 2.51 4.6 2.18
+ $ freq.IQR   : num  0.1419 0.1429 0.3584 0.0312 0.1191
+ $ time.median: num  0.0605 0.0745 0.0586 0.048 0.0747
+ $ time.Q25   : num  0.0302 0.0447 0.0293 0.016 0.0448
+ $ time.Q75   : num  0.0907 0.0894 0.088 0.0801 0.1194
+ $ time.IQR   : num  0.0605 0.0447 0.0586 0.0641 0.0747
+ $ skew       : num  7.56 7.1 3.89 16.44 9.14
+ $ kurt       : num  68.2 61 18.3 296.2 97.3
+ $ sp.ent     : num  0.558 0.563 0.69 0.511 0.553
+ $ time.ent   : num  0.935 0.946 0.947 0.923 0.949
+ $ entropy    : num  0.521 0.533 0.654 0.472 0.525
+ $ sfm        : num  0.0193 0.0199 0.0208 0.0757 0.0228
+ $ meandom    : num  2.12 2.1 2.37 4.58 2.12
+ $ mindom     : num  1.94 1.94 1.98 4.57 2.02
+ $ maxdom     : num  2.28 2.28 2.84 4.61 2.28
+ $ dfrange    : num  0.3445 0.3445 0.8613 0.0431 0.2584
+ $ modindx    : num  1 1 1.1 3 1
+ $ startdom   : num  1.94 1.94 1.98 4.57 2.02
+ $ enddom     : num  2.28 2.28 2.76 4.61 2.28
+ $ dfslope    : num  3.256 2.892 6.61 0.448 1.923
+ $ meanpeakf  : num  2.06 2.02 2.06 4.62 2.06
+Downloading files...
+   |                                                  | 0 % ~calculating     |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed = 04s
+double-checking downloaded files
+[1] "loop number is "
+[1] 64
+[1] //www.xeno-canto.org/138624/download
+8276 Levels: //www.xeno-canto.org/418340/download ...
+[1] "/home/dan/Bird/dananjaya"
+   |                                                  | 0 % ~calculating     |++++++++++++++++++++++++++++++++++++++++++++++++++| 100% elapsed = 23s
+All files can be read[1] "# Let's create a list of all the recordings in the directory"
+[1] "# We will use this list to downsample the wav files so the following analyses go a bit faster"
+[1] "# This subset is based on the list of wav files we created above,after I changed the code wav has only one file name"
+Detecting signals in sound files:   |                                                  | 0 % ~calculating  

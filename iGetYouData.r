@@ -1,3 +1,4 @@
+sink("logfile", append=FALSE, split=TRUE)
 library('warbleR')
 # Create a new directory
 dir.create(file.path(getwd(),"dananjaya"))
@@ -50,7 +51,7 @@ print("# Now, how many recordings per locality")
 
 # And only those of the highest quality
 #Phae.lon.LS <- Phae.lon.LS[Phae.lon.LS$Quality == "A", ]
-
+write.csv(usata.song, "USA_Texas_A.csv", row.names = FALSE)
 #print("generating map # map in the graphic device (img = FALSE)")
 #xcmaps(usata.song, img = TRUE)
 print(length(usata.song))
@@ -60,8 +61,9 @@ for(song in 1:nrow(usata.song)){
 querxc(X =usata.song[song,]) 
 print("loop number is ")
 print(song)
+print(usata.song[song,12])
 # Save each data frame object as a .csv file 
-write.csv(usata.song, "USA_Texas_A.csv", row.names = FALSE)
+#write.csv(usata.song, "USA_Texas_A.csv", row.names = FALSE)
 
 
 
@@ -85,6 +87,7 @@ if(inherits(possibleError,"error")) {
 	next
    }
 
+#write.csv(usata.song, "USA_Texas_A.csv", row.names = FALSE ,col.names = FALSE, append=TRUE )
 
 print("# Let's create a list of all the recordings in the directory")
 wavs <- list.files(pattern="wav$")
@@ -203,6 +206,8 @@ write.table(params, "feature_vector.csv", sep=',',row.names = FALSE,col.names=FA
 unlink("*.mp3")
 unlink("*.wav")
 }
+
+split()
 # As always, it's a good idea to write .csv files to your working directory
 
 
