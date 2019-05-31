@@ -57,25 +57,35 @@ write.csv(usata.song, "USA_Texas_A.csv", row.names = FALSE)
 print(length(usata.song))
 print(nrow(usata.song))
 print("# Loop starts and downnload file by file")
-for(song in 1:nrow(usata.song)){
+for(song in 25:nrow(usata.song)){
+
+unlink("*.mp3")
+unlink("*.wav")
+
 querxc(X =usata.song[song,]) 
 print("loop number is ")
 print(song)
 print(usata.song[song,12])
 # Save each data frame object as a .csv file 
 #write.csv(usata.song, "USA_Texas_A.csv", row.names = FALSE)
-
+sizet<-file.size(list.files(pattern=".mp3"))
+size<-(sizet/10e6)
+if (size>5){
+	print(paste("the file",usata.song[song,12])+paste(" is too big it's size is",size))
+	write.table(song,"files_skipped.csv",sep='/n',row.names = FALSE,col.names=FALSE,append= TRUE)
+	next
+}
 
 
 # Neither of these functions requires arguments
 # Always check you're in the right directory beforehand
 print(getwd())
 
-possibleError <- tryCatch(mp32wav(),error = function(e){print(e)})
+possibleError <- tryCatch(pp<-readMP3(list.files(pattern=".mp3")),error = function(e){print(e)})
 if(inherits(possibleError,"error")) {
      next
    }
-
+writeWave(pp,"thisIswav")
 
 
 # You can use checkwavs to see if wav files can be read

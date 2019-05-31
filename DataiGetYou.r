@@ -1,4 +1,6 @@
+sink("logfile", append=FALSE, split=TRUE)
 library('warbleR')
+library('tuneR')
 # Create a new directory
 dir.create(file.path(getwd(),"dananjaya"))
 setwd(file.path(getwd(),"dananjaya"))
@@ -20,16 +22,16 @@ pause = function()
 #USA <- querxc('cnt:"United States"', download = FALSE) 
 #names(USA)
 #View(USA)
-print("# Query Xeno-Canto for all recordings of the species Phaethornis longirostris")
-USA.Texas.A <- querxc('cnt:"United States" loc: "Texas" q: A', download = FALSE) 
-print("#view command output")
+#print("# Query Xeno-Canto for all recordings of the species Phaethornis longirostris")
+USA.Texas.A <- querxc('cnt:"United States" q: A', download = FALSE) 
+#print("#view command output")
 #View(USA.Texas.A)
 print("# Find out number of available recordings")
 nrow(USA.Texas.A) 
-print("# Find out how many types of signal descriptions exist in the Xeno-Canto metadata")
-levels(USA.Texas.A$Vocalization_type)
+#print("# Find out how many types of signal descriptions exist in the Xeno-Canto metadata")
+#levels(USA.Texas.A$Vocalization_type)
 
-print("How many recordings per signal type?")
+#print("How many recordings per signal type?")
 #table(USA.Texas.A$Vocalization_type)
 
 # There are many levels to the Vocalization_type variable. 
@@ -42,7 +44,7 @@ usata.song <- droplevels(USA.Texas.A[grep("song", USA.Texas.A$Vocalization_type,
 print("# Check resulting data frame")
 str(usata.song) 
 
-print("# Now, how many recordings per locality")
+#print("# Now, how many recordings per locality")
 #table(usata.song$Locality)
 
 #first filter by location
@@ -50,37 +52,70 @@ print("# Now, how many recordings per locality")
 
 # And only those of the highest quality
 #Phae.lon.LS <- Phae.lon.LS[Phae.lon.LS$Quality == "A", ]
-
+write.csv(usata.song, "USA_Texas_A.csv", row.names = FALSE)
 #print("generating map # map in the graphic device (img = FALSE)")
 #xcmaps(usata.song, img = TRUE)
-
+print("number of files after filtering USA,quality A,Only songs")
+#print(length(usata.song))
+print(nrow(usata.song))
 print("# Loop starts and downnload file by file")
-for(song in 1:length(usata.song)){
+for(song in 26:nrow(usata.song)){
+
+unlink("*.mp3")
+unlink("*.wav")
+
 querxc(X =usata.song[song,]) 
-
+print("loop number is ")
+print(song)
+print("file name is")
+print(usata.song[song,12])
 # Save each data frame object as a .csv file 
-write.csv(usata.song, "USA_Texas_A.csv", row.names = FALSE)
-
+#write.csv(usata.song, "USA_Texas_A.csv", row.names = FALSE)
+sizet<-file.size(list.files(pattern=".mp3"))
+size<-(sizet/10e5)
+print(paste("file size ib Bytes :",sizet,"in Mb :",size))
+if (size>5){
+	print(paste("the file ",usata.song[song,12]," is too big it's size is",size))
+	write.table(song,"files_skipped.csv",sep='/n',row.names = FALSE,col.names=FALSE,append= TRUE)
+	next
+}
 
 
 # Neither of these functions requires arguments
 # Always check you're in the right directory beforehand
-print(getwd())
-mp32wav() 
+#print(getwd())
+
+possibleError <- tryCatch(
+{
+    mp3files <- list.files(pattern=".mp3")
+    for(mp3file in mp3files){
+        filename_without_ext <- tools::file_path_sans_ext(mp3file)
+        wavfilename <- paste(filename_without_ext,".wav",sep="")
+        mp3data <- readMP3(mp3file)
+        writeWave(mp3data,wavfilename)
+    }
+},error = function(e){print(e)})
+
 
 # You can use checkwavs to see if wav files can be read
+possibleError <- tryCatch(checkwavs(),error = function(e){print(e)})
+if(inherits(possibleError,"error")) {
+     
+     unlink("*.mp3")
+     unlink("*.wav")
+	next
+   }
 
-try({
-checkwavs()
+#write.csv(usata.song, "USA_Texas_A.csv", row.names = FALSE ,col.names = FALSE, append=TRUE )
 
 print("# Let's create a list of all the recordings in the directory")
 wavs <- list.files(pattern="wav$")
 
-print("# We will use this list to downsample the wav files so the following analyses go a bit faster")
+#print("# We will use this list to downsample the wav files so the following analyses go a bit faster")
 lapply(wavs, function(x) writeWave(downsample(readWave(x), samp.rate = 22050),filename = x))
 
 # Let's first create a subset for playing with arguments 
-print("# This subset is based on the list of wav files we created above,after I changed the code wav has only one file name")
+#print("# This subset is based on the list of wav files we created above,after I changed the code wav has only one file name")
 sub <- wavs
 
 # ovlp = 10 speeds up process a bit 
@@ -147,15 +182,22 @@ set.seed(5)
 #snrspecs(X = X, flim = c(2, 11), snrmar = 0.2, mar = 0.7, it = "tiff")
 
 #snrspecs(X = Phae.ad, flim = c(2, 11), snrmar = 0.2, mar = 0.7, it = "tiff")
+if(nrow(usa.ad)<3){
+	
+	unlink("*.mp3")
+	unlink("*.wav")
+	next
 
+}
+print("number of files from autodetect")
+print(nrow(usa.ad))
 usa.snr <- sig2noise(X = usa.ad[seq(1, nrow(usa.ad)), ], mar = 0.04)
-print(ave(-usa.snr$SNR, usa.snr$sound.files, FUN = rank))
-table(usa.snr)
-pause()
+#table(usa.snr)
+#pause()
 
 usa.hisnr <- usa.snr[ave(-usa.snr$SNR, usa.snr$sound.files, FUN = rank) <= 5, ]
 
-print("# Double check the number of selection per sound files") 
+#print("# Double check the number of selection per sound files") 
 #table(usa.hisnr$sound.files)
 
 write.csv(usa.hisnr, "USA_Texas_A_autodetec_selecs.csv", row.names = FALSE)
@@ -176,16 +218,17 @@ write.csv(usa.hisnr, "USA_Texas_A_autodetec_selecs.csv", row.names = FALSE)
 # detected for measurements 
 params <- specan(usa.hisnr, bp = c(1, 11), threshold = 15)
 
-View(params)
+#View(params)
 
 str(params)
 
-write.csv(params, "feature_vector.csv", row.names = FALSE,append= TRUE)
-pause()
+write.table(params, "feature_vector.csv", sep=',',row.names = FALSE,col.names=FALSE,append= TRUE)
+#pause()
 unlink("*.mp3")
 unlink("*.wav")
-})
 }
+
+split()
 # As always, it's a good idea to write .csv files to your working directory
 
 
