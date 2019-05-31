@@ -53,11 +53,13 @@ print("# Now, how many recordings per locality")
 
 #print("generating map # map in the graphic device (img = FALSE)")
 #xcmaps(usata.song, img = TRUE)
-
+print(length(usata.song))
+print(nrow(usata.song))
 print("# Loop starts and downnload file by file")
-for(song in 1:length(usata.song)){
+for(song in 1:nrow(usata.song)){
 querxc(X =usata.song[song,]) 
-
+print("loop number is ")
+print(song)
 # Save each data frame object as a .csv file 
 write.csv(usata.song, "USA_Texas_A.csv", row.names = FALSE)
 
