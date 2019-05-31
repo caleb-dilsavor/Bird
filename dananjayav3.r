@@ -21,7 +21,7 @@ pause = function()
 #names(USA)
 #View(USA)
 print("# Query Xeno-Canto for all recordings of the species Phaethornis longirostris")
-USA.Texas.A <- querxc('cnt:"United States" loc: "Texas" q: A', download = FALSE) 
+USA.Texas.A <- querxc('cnt:"United States" q: A', download = FALSE) 
 print("#view command output")
 #View(USA.Texas.A)
 print("# Find out number of available recordings")
@@ -55,7 +55,7 @@ print("# Now, how many recordings per locality")
 #xcmaps(usata.song, img = TRUE)
 
 print("# Loop starts and downnload file by file")
-for(song in 8:length(usata.song)){
+for(song in 1:length(usata.song)){
 querxc(X =usata.song[song,]) 
 
 # Save each data frame object as a .csv file 
@@ -66,10 +66,23 @@ write.csv(usata.song, "USA_Texas_A.csv", row.names = FALSE)
 # Neither of these functions requires arguments
 # Always check you're in the right directory beforehand
 print(getwd())
-mp32wav() 
+
+possibleError <- tryCatch(mp32wav(),error = function(e){print(e)})
+if(inherits(possibleError,"error")) {
+     next
+   }
+
+
 
 # You can use checkwavs to see if wav files can be read
-checkwavs() 
+possibleError <- tryCatch(checkwavs(),error = function(e){print(e)})
+if(inherits(possibleError,"error")) {
+     
+     unlink("*.mp3")
+     unlink("*.wav")
+	next
+   }
+
 
 print("# Let's create a list of all the recordings in the directory")
 wavs <- list.files(pattern="wav$")
@@ -145,11 +158,16 @@ set.seed(5)
 #snrspecs(X = X, flim = c(2, 11), snrmar = 0.2, mar = 0.7, it = "tiff")
 
 #snrspecs(X = Phae.ad, flim = c(2, 11), snrmar = 0.2, mar = 0.7, it = "tiff")
-
+if(nrow(usa.ad)<3){
+	
+	unlink("*.mp3")
+	unlink("*.wav")
+	next
+}
+print(nrow(usa.ad))
 usa.snr <- sig2noise(X = usa.ad[seq(1, nrow(usa.ad)), ], mar = 0.04)
-print(ave(-usa.snr$SNR, usa.snr$sound.files, FUN = rank))
-table(usa.snr)
-pause()
+#table(usa.snr)
+#pause()
 
 usa.hisnr <- usa.snr[ave(-usa.snr$SNR, usa.snr$sound.files, FUN = rank) <= 5, ]
 
@@ -174,12 +192,12 @@ write.csv(usa.hisnr, "USA_Texas_A_autodetec_selecs.csv", row.names = FALSE)
 # detected for measurements 
 params <- specan(usa.hisnr, bp = c(1, 11), threshold = 15)
 
-View(params)
+#View(params)
 
 str(params)
 
-write.csv(params, "feature_vector.csv", row.names = FALSE,append= TRUE)
-pause()
+write.table(params, "feature_vector.csv", sep=',',row.names = FALSE,col.names=FALSE,append= TRUE)
+#pause()
 unlink("*.mp3")
 unlink("*.wav")
 }
