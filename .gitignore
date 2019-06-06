@@ -5,3 +5,5 @@ dananjaya/*
 *.tiff
 *.tif
 logfile
+.RData
+.RHistory
