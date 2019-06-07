@@ -52,6 +52,7 @@ This will create a `Data/` directory and start downloading data and extracting f
 Q.results <- querxc('cnt:"United States" q: A', download = FALSE) 
 ```
 For more information about Xeno-Canto queries, refer to [Xeno-Canto search tips](https://www.xeno-canto.org/help/search).
+
 2. Follow `Classification.ipynb` (some of the classifiers we tried out), `PlotsAndModels10.ipynb` (classification of top 10 most frequent labels), and `PlotsAndModels78.ipynb` (classification of top 78 most frequent labels) by running them in jupyter notebook:
 ```sh
 $ jupyter notebook
