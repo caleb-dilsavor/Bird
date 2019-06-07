@@ -18,14 +18,8 @@ In this project we are exploring a small subset of the database by filtering for
 |RF + Adaboost|80.6%|65.2%|
 |Extremely RF|83.5%|70.4%|
 
-
-```mermaid
-graph LR
-A[Download data] --> B(Detect signals)
-```
-
 ## Getting Started
-### Dependencies
+### Installing Dependencies
 You need the following dependencies installed to walk through this project:
 1. R language (version 3.6.0+, 64-bit) ([r-project.org](https://cran.r-project.org))
 2. R packages [warbleR](https://github.com/cran/warbleR) and [tuneR](https://github.com/cran/tuneR)
@@ -49,5 +43,16 @@ First run `pip3 install --upgrade pip`
 |sklearn                        |`pip3 install sklearn`        |
 |matplotlib                     |`pip3 install matplotlib`     |
 ### Walkthrough
-
-(TODO)
+1. Start by downloading data using `download_data.r` (a dataset we downloaded for testing is provided in the repository).
+```sh
+$ Rscript download_data.r
+```
+This will create a `Data/` directory and start downloading data and extracting features. To change the scope of what you want to download, change the query in line 24:
+```R
+Q.results <- querxc('cnt:"United States" q: A', download = FALSE) 
+```
+For more information about Xeno-Canto queries, refer to [Xeno-Canto search tips](https://www.xeno-canto.org/help/search).
+2. Follow `Classification.ipynb` (some of the classifiers we tried out), `PlotsAndModels10.ipynb` (classification of top 10 most frequent labels), and `PlotsAndModels78.ipynb` (classification of top 78 most frequent labels) by running them in jupyter notebook:
+```sh
+$ jupyter notebook
+```
