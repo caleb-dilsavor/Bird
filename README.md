@@ -1,7 +1,7 @@
 
 
 # Birds in Random Forests
-This is the winning project of [Erdös Institute](https://erdosinstitute.org)'s Data-science-boot-camp 2019. We classify croudsourced audio recordings of bird songs from [Xeno-Canto.org](https://www.xeno-canto.org).
+This is the winning project of [Erdös Institute](https://erdosinstitute.org)'s Cöde Data-science-boot-camp 2019. We classify crowdsourced audio recordings of bird songs from [Xeno-Canto.org](https://www.xeno-canto.org).
 
 ## Introduction
 Xeno-canto ([xeno-canto.org](https://www.xeno-canto.org)) is a bird sound crowdsourcing website that has hundreds of thousands (and counting) of recordings from around the world contributed by researchers, scientists, as well as general public. It contains bird sounds and detailed metadata including geotag, time, audio quality, and species name, etc.
