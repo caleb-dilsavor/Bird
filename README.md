@@ -1,4 +1,5 @@
 
+
 # Birds in Random Forests
 This is the winning project of [Erdös Institute](https://erdosinstitute.org)'s Data-science-boot-camp 2019. We classify croudsourced audio recordings of bird songs from [Xeno-Canto.org](https://www.xeno-canto.org).
 
@@ -53,7 +54,15 @@ Q.results <- querxc('cnt:"United States" q: A', download = FALSE)
 ```
 For more information about Xeno-Canto queries, refer to [Xeno-Canto search tips](https://www.xeno-canto.org/help/search).
 
-2. Follow `Classification.ipynb` (some of the classifiers we tried out), `PlotsAndModels10.ipynb` (classification of top 10 most frequent labels), and `PlotsAndModels78.ipynb` (classification of top 78 most frequent labels) by running them in jupyter notebook:
+**Note:** Downloading and feature extraction can be a time consuming process. If you have to rerun `download_data.r` multiple times you can 1) change the range in the following loop accordingly (line 61):
+```R
+for(song in 1:nrow(Q.results.songs)){
+	...
+}
+```
+and 2)  rename the data directory after each run so that new data don't overwrite previous data, and then 3) open `concat_features.ipynb` in `jupyter notebook` and follow the instructions to concatenate all data.
+
+3. Follow `Classification.ipynb` (some of the classifiers we tried out), `PlotsAndModels10.ipynb` (classification of top 10 most frequent labels), and `PlotsAndModels78.ipynb` (classification of top 78 most frequent labels) by running them in jupyter notebook:
 ```sh
 $ jupyter notebook
 ```
