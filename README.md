@@ -8,11 +8,13 @@ This is the winning project of [Erdös Institute](https://erdosinstitute.org)'s 
 You need the following dependencies installed to walk through this project:
 1. R language (version 3.6.0 64-bit) ([r-project.org](https://cran.r-project.org))
 2. R library [warbleR](https://github.com/cran/warbleR)
+
 In R:
 ```R
 install.packages("warbleR")
 ```
 3. R library [tuneR](https://github.com/cran/tuneR)
+
 In R:
 ```R
 install.packages("tuneR")
